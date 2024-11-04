@@ -66,7 +66,7 @@ h2 {
     width: 50%;
     border: 3px solid #333;
     border-radius: 4px;
-    margin-left: 25%;
+    margin-left: 27%;
     margin-bottom: 20px;
 }
 
@@ -74,13 +74,14 @@ h2 {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 27px;
+    margin-bottom: 200px;
 }
 
-.hours{
+/* .hours{
     margin-top: 20px;
     list-style: none;
-}
+} */
 
 /* form agendamento */
 .form-agendamento label {
