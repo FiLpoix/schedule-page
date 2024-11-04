@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Consultas</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#">Página inicial</a></li>
+            <li><a href="#">Perfil do usuário</a></li>
+            <li><a href="#">Agendar Consulta</a></li>
+            <li><a href="#">Históruco de consultas</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>Horario de Agendamentos</h2>
+        <div id="calendar">
+            <ul class="week">
+                <li>Dom</li>|
+                <li>Seg</li>|
+                <li>Ter</li>|
+                <li>Qua</li>|
+                <li>Qui</li>|
+                <li>Sex</li>|
+                <li>Sab</li>
+            </ul>
+            <ul class="hours">
+                <li>7:00 AM</li>
+            </ul>
+        </div>
+
+        <h2>Agendamento</h2>
+        <form id="form" class="form-agendamento">
+
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Hora:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="consulta">Selecione o tipo de consulta:</label>
+            <select name="consulta" id="consulta">
+                <option value="faceta">Faceta</option>
+                <option value="other">...</option>
+            </select>
+
+            <label for="description">Descrição da Consulta:</label>
+            <textarea id="description" name="description" rows="3"></textarea>
+
+        </form>
+        <div class="btns">
+        <button type="button" id="cancelBtn">Cancelar</button>
+        <button type="button" id="scheduleBtn">Agendar Consulta</button>    
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .calendario {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .mes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+  }
+  
+  .mes span {
+    cursor: pointer;
+  }
+  
+  .mes-nome {
+    font-size: 1.2em;
+  }
+  
+  .dias-semana, .dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  
+  .dias-semana div, .dias div {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .dias div {
+    border: 1px solid #ddd;
+    min-height: 40px;
+  }
+  
+  .dia.vazio {
+    background-color: #f9f9f9;
+  }
+  
+  .dia {
+    cursor: pointer;
+  }
+  
+  .dia:hover {
+    background-color: #e0e0e0;
+  }
+  
